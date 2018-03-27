@@ -12,11 +12,26 @@ footer {
 
 }
 
+#sample-work {
+  margin-top:50px;
+}
+
+.project-thumbs {
+
+  max-width: 500px;
+  max-height: auto;
+
+}
+
 #change-color:hover {
   color: #ff4e47 !important;
   text-decoration:none;
 }
 
+.outside-work {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
 
 .content-text {
     font-family: 'Roboto', sans-serif;
@@ -46,14 +61,6 @@ footer {
   padding-bottom: 25px;
   font-weight: 600;
 
-}
-
-.about-body {
-  float:left;
-  list-style-type: none;
-  margin-top:50px;
-  font-size:26px;
-  padding-top: 50px;
 }
 
 .contact-list {
