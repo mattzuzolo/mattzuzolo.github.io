@@ -1,0 +1,92 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  margin-top: 50px;
+  margin-right:50px;
+}
+
+footer {
+  text-decoration:none;
+  margin-left: 15px;
+  font-size:24px;
+
+}
+
+#change-color:hover {
+  color: #ff4e47 !important;
+  text-decoration:none;
+}
+
+
+.content-text {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+.grafs {
+  padding-left:50px;
+  list-style-type: none;
+}
+
+.navigation-list {
+
+  font-size:35px;
+  list-style-type: none;
+  float:left;
+  text-align:right;
+
+}
+
+.more {
+  display:none;
+}
+
+.primary-info {
+  margin-top: 50px;
+  padding-bottom: 25px;
+  font-weight: 600;
+
+}
+
+.about-body {
+  float:left;
+  list-style-type: none;
+  margin-top:50px;
+  font-size:26px;
+  padding-top: 50px;
+}
+
+.contact-list {
+  list-style-type: none;
+  float:left;
+  margin-top:50px;
+  font-size:26px;
+}
+
+.hide-over {
+  overflow:hidden
+}
+
+#first-graf {
+  margin-top:50px;
+
+}
+#content {
+  margin-top: 50px;
+}
+
+#link-normal {
+  color:black;
+  text-decoration:none;
+}
+
+#link-normal:hover {
+  color:#ff4e47;
+}
+
+#profile-pic {
+  float:left;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!--Load CSS files below -->
+        <!-- <meta charset="UTF-8"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+        <link type="text/css"rel="stylesheet" href="index.css">
+
+
+        <!--Load CSS files above -->
+
+        <title>First LastName</title>
+    </head>
+
+
+    <body>
+
+        <ul class="navigation-list">
+
+            <h1 a href="#" id="link-normal" onclick="hideIt()" class="primary-info">First LastName</a></h1>
+
+            <li> <a href="#" id="link-normal" onclick="displayAbout()">about</a></li>
+            <li> <a href="#" id="link-normal" target="_blank">writing</a></li>
+            <li> <a href="https://github.com/mattzuzolo" id="link-normal" target="_blank">code</a> </li>
+            <li id="link-normal">resume</li>
+            <li> <a href="#" id="link-normal" target="_blank">linkedin</a> </li>
+            <li> <a href="#" id="link-normal" onclick="displayMoreWork()">more work<a> </li>
+            <li> <a href="#" id="link-normal" onclick="displayMoreContact()">contact<a> </li>
+
+        </ul> <!-- ends navigation list <ul> -->
+
+
+
+
+
+        <div class="more about content-text" >
+          <div class="hide-over">
+
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Miguel_de_Cervantes_lithography-cropped.jpg" alt="cervantes" id="profile-pic">
+
+              <p class="grafs" style="padding-top:50px;">First paragraph</p>
+
+              <p class="grafs">Second paragraph</p>
+
+              <p class="grafs">third paragraph</p>
+
+              <p class="grafs">fourth paragraph</p>
+
+              <p class="grafs">fifth paragraph</p>
+
+              <p class="grafs">sixth paragraph</p>
+
+
+            </div>
+          </div> <!-- CLOSES ABOUT SECTION -->
+
+
+          <div class="more work">
+            <div class="hide-over">
+
+                <p class="grafs" style="margin-top:50px;">TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE...</p>
+
+                <p class="grafs">TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE...TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE...TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE...TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE...TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE TEXT GOES HERE...</p>
+
+              </div>
+            </div> <!-- CLOSES MORE WORK SECTION -->
+
+
+            <div class="more contact">
+                  <div class="hide-over" >
+
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Miguel_de_Cervantes_lithography-cropped.jpg" alt="cervantes" id="profile-pic">
+
+                      <!-- <ul class="contact-list"> -->
+                      <ul class="grafs" style="margin-top:50px;">
+                        <li>  <h3>fake@gmail.com</h3> </li>
+                        <li>  <h3>(800) 123-4567</h3> </li>
+                      </ul>
+
+                  </div>
+            </div> <!-- CLOSES MORE CONTACT SECTION -->
+
+            <footer class="fixed-bottom">
+          <p><a href="https://github.com/mattzuzolo" class="text-secondary" id="change-color">
+          Coded by me</a> </p>
+            </footer>
+
+
+    <!--Load javascript files below -->
+            <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+            </script>
+
+
+            <!-- This JS will display the apropriate information selected on the navbar. If text is already present, it will be hidden to make room for new information request. -->
+            <script type="text/javascript">
+
+                function displayAbout () {
+                    // function will hide the class more before displaying to "reset" page and maintain only one section at a time.
+                    $(".more").hide();
+                    $(".about").show();
+                }
+
+                function displayMoreWork () {
+                    $(".more").hide();
+                    $(".work").show();
+                }
+
+                function displayMoreContact () {
+                    $(".more").hide();
+                    $(".contact").show();
+                }
+
+                function hideIt () {
+                    $(".more").hide();
+                }
+            </script>
+    <!--Load javascript files above -->
+
+  </body>
+
+</html>
