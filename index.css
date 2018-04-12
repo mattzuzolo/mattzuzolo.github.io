@@ -12,7 +12,7 @@ footer {
 
 }
 
-#sample-work {
+.sample-work {
   margin-top:50px;
 }
 
@@ -23,7 +23,7 @@ footer {
 
 }
 
-#change-color:hover {
+.change-color:hover {
   color: #ff4e47 !important;
   text-decoration:none;
 }
@@ -87,11 +87,22 @@ footer {
   text-decoration:none;
 }
 
+.link-normal {
+  color:black;
+  text-decoration:none;
+}
+
 #link-normal:hover {
   color:#ff4e47;
 }
 
-#profile-pic {
+
+.link-normal:hover {
+  color:#ff4e47;
+  text-decoration: none;
+}
+
+.profile-pic {
   float:left;
   margin-top: 50px;
   padding-left: 50px;
