@@ -109,3 +109,37 @@ footer {
   padding-right: 50px;
   padding-bottom: 10px;
 }
+
+
+#four-zero-four {
+
+  font-family: 'Monoton', cursive;
+  font-size: 156px;
+
+
+}
+
+#not-available {
+
+  font-size: 66px;
+
+}
+
+#go-home {
+
+  font-size: 56px;
+  text-decoration: none;
+  color:white !important;
+}
+
+#go-home a {
+  color:white !important;
+}
+
+.error-page {
+
+  color: white !important;
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+
+}
