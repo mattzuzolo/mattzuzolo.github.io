@@ -5,6 +5,14 @@ body {
   margin-right:50px;
 }
 
+a {
+  color: black;
+}
+.resume-link:hover {
+  color: #ff4e47 !important;
+  text-decoration: none;
+}
+
 footer {
   text-decoration:none;
   margin-left: 15px;
@@ -18,7 +26,7 @@ footer {
 
 .project-thumbs {
 
-  max-width: 500px;
+  max-width: 37rem;
   max-height: auto;
 
 }
@@ -40,7 +48,12 @@ footer {
 
 .grafs {
   padding-left:50px;
+  font-size: 1.5rem;
   list-style-type: none;
+}
+
+.link-about {
+  color: #ff4e47 !important;
 }
 
 .navigation-list {
