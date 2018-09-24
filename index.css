@@ -16,12 +16,17 @@ a {
   text-decoration: none;
 }
 
+.outside-work-links:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-decoration:none;
   margin-left: 15px;
   font-size:24px;
 
 }
+
 
 .skills-list {
   list-style: none;
@@ -111,6 +116,10 @@ footer {
 .link-normal {
   color:black;
   text-decoration:none;
+}
+
+.link-normal:hover{
+  text-decoration: underline;
 }
 
 #link-normal:hover {
