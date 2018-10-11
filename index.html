@@ -1,167 +1,102 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-
-        <!--Load CSS files below -->
-        <!-- <meta charset="UTF-8"> -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-        <link type="text/css"rel="stylesheet" href="index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-        <!--Load CSS files above -->
-
-        <title>Matt Zuzolo</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500" rel="stylesheet">
+      <link type="text/css"rel="stylesheet" href="index.css">
+      <link rel="shortcut icon" type="images/png" href="images/favicon.png"/>
+      <title>Matt Zuzolo</title>
     </head>
-
 
     <body>
 
-        <ul class="navigation-list">
+      <ul class="navigation-list">
+        <h1 a href="#" onclick="hideIt()" class="link">Matt Zuzolo</a></h1>
+        <li> <a href="#" class="link" onclick="displayAbout()">about</a></li>
+        <li> <a href="https://github.com/mattzuzolo" class="link" target="_blank">github</a></li>
+        <li> <a href="#" class="link" onclick="displayMoreWork()">projects</a></li>
+        <li> <a href="https://thepointsguy.com/author/matt/" class="link" target="_blank">writing</a></li>
+        <li> <a href="./zuzolo-resume.pdf" class="link" target="_blank">resume</i><download></li>
+        <li> <a href="https://www.linkedin.com/in/mattzuzolo/" class="link" target="_blank">linkedin</a></li>
+        <li> <a href="#" class="link" onclick="displayMoreContact()">contact<a></li>
+      </ul>
 
-            <h1 a href="#" onclick="hideIt()" class="link-normal primary-info">Matt Zuzolo</a></h1>
+      <div id="about" class="more profile">
 
-            <li> <a href="#" class="link-normal" onclick="displayAbout()">about</a></li>
-            <li> <a href="https://github.com/mattzuzolo" class="link-normal" target="_blank">github</a> </li>
-            <li> <a href="#" class="link-normal" onclick="displayMoreWork()">projects</a> </li>
-            <li> <a href="https://thepointsguy.com/author/matt/" class="link-normal" target="_blank">writing</a></li>
-            <li> <a href="./zuzolo-resume.pdf" target="_blank" class="resume-link">resume</i><download></li>
-            <li> <a href="https://www.linkedin.com/in/mattzuzolo/" class="link-normal" target="_blank">linkedin</a> </li>
-            <li> <a href="#" class="link-normal" onclick="displayMoreContact()">contact<a> </li>
+        <div class="profile-left">
+          <img src="images/profile.png" alt="me" class="profile-pic">
+        </div>
+        <div class="profile-right">
+          <p class="graf">Full-stack web developer in New York City with a media background.</p>
+          <p class="graf">Please visit my <a href="https://github.com/mattzuzolo" class="link" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/mattzuzolo/" class="link" target="_blank">LinkedIn</a> page to learn more about me!</p>
+          <ul class="skills-list">
+            <li><strong>Languages —</strong> JavaScript (ES6) / Ruby / HTML / CSS</li>
+            <li><strong>Frameworks, libraries & more​ —</strong> React / Redux / Node / Mocha / jQuery / Rails / SQL / Mongo / Git</li>
+            <li><strong>Non-technical —</strong> Illustrator / Photoshop / Adobe Marketing Cloud / Google Analytics / Spanish Language</li>
+          </ul>
+        </div>
 
-        </ul> <!-- ends navigation list <ul> -->
+      </div> <!-- CLOSE ABOUT SECTION -->
 
-        <div class="more about content-text" >
-          <div class="hide-over">
+      <div id="work" class="more work">
+        <h3 class="project-title" class="project-title"><a href="https://obra-annotations.herokuapp.com/home" class="project-link" target="_blank">Obra</a></h3>
+        <span><a href="https://obra-annotations.herokuapp.com/home" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/obra" class="project-link" target="_blank">GitHub (front)</a> | <a href="https://github.com/mattzuzolo/obra-back" class="project-link" target="_blank">GitHub (back)</a></span>
+        <p class="graf">Annotate paintings and other fine arts on the web.</p>
+        <p class="graf"> <a href="https://obra-annotations.herokuapp.com/home" target="_blank"> <img src="images/obra.png" alt="obra-example"/></a></p>
 
-              <img src="https://avatars1.githubusercontent.com/u/2916901?s=400&u=b7c8edd341ae4f70c43e85f109557c27080ae674&v=4" alt="me" class="profile-pic">
+        </br>
 
-              <p class="grafs" style="padding-top:50px;">Full-stack web developer in New York City with a media background.</p>
+        <h3 class="project-title"><a href="https://bibli-books.herokuapp.com/" class="project-link" target="_blank">Bibli</a></h3>
+        <span><a href="https://bibli-books.herokuapp.com/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/bibli" class="project-link" target="_blank">GitHub (front)</a></span> | <a href="https://github.com/mattzuzolo/bibli-back" class="project-link" target="_blank">GitHub (back)</a></span>
+        <p class="graf">Manage and organize your personal library on the web.</p>
+        <p class="graf"> <a href="https://bibli-books.herokuapp.com/" target="_blank"> <img src="images/bibli.png" alt="bibli-example"/></a></p>
 
-              <p class="grafs">Please visit my <a href="https://github.com/mattzuzolo" class="link-about" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/mattzuzolo/" class="link-about" target="_blank">LinkedIn</a> page to learn more about me!</p>
+        </br>
 
-              <p class="grafs">
-                <ul class="skills-list">
-                  <li><strong>Languages —</strong> JavaScript (ES6) / Ruby / HTML / CSS</li>
-                  <li><strong>Frameworks, libraries & more​ —</strong> React / Redux / Node / Mocha / jQuery / Rails / SQL / Mongo / Git</li>
-                  <li><strong>Non-technical —</strong> Illustrator / Photoshop / Adobe Marketing Cloud / Google Analytics / Spanish Language
-                </ul>
+        <h3 class="project-title"><a href="https://mattzuzolo.com/mental-math/" class="project-link" target="_blank">Mental Math</a></h3>
+        <span><a href="https://mattzuzolo.com/mental-math/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/mental-math" class="project-link" target="_blank">GitHub (front)</a> | <a href="https://github.com/mattzuzolo/mental-math-back" class="project-link" target="_blank">GitHub (back)</a></span>
+        <p class="graf">Practice your mental math skills against the clock.</p>
+        <p class="graf"> <a href="https://mattzuzolo.com/mental-math/" target="_blank"> <img src="images/mental-math.png" alt="mental-math-example" /></a></p>
 
-              </p>
+        </br>
 
+        <h3 class="project-title"><a href="https://mattzuzolo.com/ellsworth-kelly-generator-js/" class="project-link" target="_blank">Ellsworth Kelly Generator</a></h3>
+        <span><a href="https://mattzuzolo.com/ellsworth-kelly-generator-js/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/ellsworth-kelly-generator-js" class="project-link" target="_blank">GitHub</a></span>
+        <p class="graf">Recreate artist Ellsworth Kelly's "Spectrum of Colors Arranged by Chance" series with different themes.</p>
+        <p class="graf"> <a href="https://mattzuzolo.com/ellsworth-kelly-generator-js/" target="_blank"> <img src="images/ellsworth.png" alt="ellsworth-example" /></a></p>
+      </div> <!-- CLOSES MORE WORK SECTION -->
 
+      <div id="contact" class="more profile">
 
+        <div class="profile-left">
+          <img class="profile-pic" src="images/profile.png" alt="me">
+        </div>
+        <div class="profile-right graf">
+            <h3><a class="link" href="mailto:matthewzuzolo@gmail.com">matthewzuzolo@gmail.com</a></h3>
+            <h3>845.652.0093</h3>
+        </div>
 
-            </div>
-          </div> <!-- CLOSES ABOUT SECTION -->
+      </div> <!-- CLOSES MORE CONTACT SECTION -->
 
-
-          <div class="more work content-text">
-            <div class="hide-over">
-
-              <div class="sample-work">
-
-
-              <h3><a href="https://obra-annotations.herokuapp.com/home" class="link-normal outside-work link-about" target="_blank">Obra</a></h3>
-              <span class="outside-work"><a href="https://obra-annotations.herokuapp.com/home" class="link-about" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/obra" class="link-about" target="_blank">GitHub (front)</a> | <a href="https://github.com/mattzuzolo/obra-back" class="link-about" target="_blank">GitHub (back)</a></span>
-
-              <p class="grafs outside-work">Annotate paintings and other fine arts on the web.</p>
-              <p class="grafs outside-work"> <a href="https://obra-annotations.herokuapp.com/home" target="_blank"> <img src="images/obra.png" class="project-thumbs" alt="obra-example" class="inline"/> </a>  </p>
-
-              </br>
-              <h3><a href="https://bibli-books.herokuapp.com/" class="link-normal outside-work link-about" target="_blank">Bibli</a></h3>
-              <span class="outside-work"><a href="https://bibli-books.herokuapp.com/" class="link-about" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/bibli" class="link-about" target="_blank">GitHub (front)</a></span> | <a href="https://github.com/mattzuzolo/bibli-back" class="link-about" target="_blank">GitHub (back)</a></span>
-
-              <p class="grafs outside-work">Manage and organize your personal library on the web.</p>
-              <p class="grafs outside-work"> <a href="https://bibli-books.herokuapp.com/" target="_blank"> <img src="images/bibli.png" class="project-thumbs" alt="bibli-example" class="inline"/> </a>  </p>
-
-
-              </br>
-              <h3><a href="https://mattzuzolo.com/mental-math/" class="link-normal outside-work link-about" target="_blank">Mental Math</a></h3>
-              <span class="outside-work"><a href="https://mattzuzolo.com/mental-math/" class="link-about" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/mental-math" class="link-about" target="_blank">GitHub (front)</a> | <a href="https://github.com/mattzuzolo/mental-math-back" class="link-about" target="_blank">GitHub (back)</a></span>
-
-              <p class="grafs outside-work">Practice your mental math skills against the clock.</p>
-              <p class="grafs outside-work"> <a href="https://mattzuzolo.com/mental-math/" target="_blank"> <img src="images/mental-math.png" class="project-thumbs" alt="mental-math-example" class="inline"/> </a>  </p>
-
-
-              </br>
-
-              <h3><a href="https://mattzuzolo.com/ellsworth-kelly-generator-js/" class="link-normal outside-work link-about" target="_blank">Ellsworth Kelly Generator</a></h3>
-              <span class="outside-work"><a href="https://mattzuzolo.com/ellsworth-kelly-generator-js/" class="link-about" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/ellsworth-kelly-generator-js" class="link-about" target="_blank">GitHub</a></span>
-
-              <p class="grafs outside-work">Recreate artist Ellsworth Kelly's "Spectrum of Colors Arranged by Chance" series with different themes.</p>
-              <p class="grafs outside-work"> <a href="https://mattzuzolo.com/ellsworth-kelly-generator-js/" target="_blank"> <img src="images/ellsworth.png" class="project-thumbs" alt="ellsworth-example" class="inline"/> </a>
-              </p>
-
-
-
-              </div> <!-- closes sample-work div -->
-
-
-
-
-            </div> <!-- closes hide over div -->
-            </div> <!-- CLOSES MORE WORK SECTION -->
-
-
-            <div class="more contact">
-                  <div class="hide-over" >
-
-                      <img src="https://avatars1.githubusercontent.com/u/2916901?s=400&u=b7c8edd341ae4f70c43e85f109557c27080ae674&v=4" alt="me" class="profile-pic">
-                      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Miguel_de_Cervantes_lithography-cropped.jpg" alt="cervantes" class="profile-pic"> -->
-
-                      <!-- <ul class="contact-list"> -->
-                      <ul class="grafs" style="margin-top:50px;">
-                        <li>  <h3><a class="link-about" href="mailto:matthewzuzolo@gmail.com">matthewzuzolo@gmail.com</a></h3> </li>
-                        <li>  <h3>(845) 652-0093</h3> </li>
-                      </ul>
-
-                  </div>
-            </div> <!-- CLOSES MORE CONTACT SECTION -->
-
-            <footer class="fixed-bottom">
-          <p><a href="https://github.com/mattzuzolo" class="change-color">
-          Coded by me <i class="fab fa-github"></i></a> </p>
-            </footer>
-
-
-    <!--Load javascript files below -->
-            <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-            </script>
-
-
-            <!-- This JS will display the apropriate information selected on the navbar. If text is already present, it will be hidden to make room for new information request. -->
-            <script type="text/javascript">
-
-                function displayAbout () {
-                    // function will hide the class more before displaying to "reset" page and maintain only one section at a time.
-                    hideIt();
-                    $(".about").show();
-                }
-
-                function displayMoreWork () {
-                    hideIt();
-                    $(".work").show();
-                }
-
-                function displayMoreContact () {
-                    hideIt();
-                    $(".contact").show();
-                }
-
-                function hideIt () {
-                    $(".more").hide();
-                }
-            </script>
-    <!--Load javascript files above -->
+    <!-- This JS will display the apropriate information selected on the navbar. If text is already present, it will be hidden to make room for new information request. -->
+    <script type="text/javascript">
+        function displayAbout() {
+          hideIt();
+          document.getElementById('about').style.display = "flex";
+        }
+        function displayMoreWork() {
+          hideIt();
+          document.getElementById('work').style.display = "inline";
+        }
+        function displayMoreContact() {
+          hideIt();
+          document.getElementById('contact').style.display = "flex";
+        }
+        function hideIt() {
+          document.querySelectorAll('.more').forEach(element => element.style.display = "none");
+        }
+    </script>
 
   </body>
-
 </html>
