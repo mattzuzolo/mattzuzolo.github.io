@@ -1,80 +1,125 @@
 * {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "Avenir";
 }
 
 body {
-  margin: 2rem;
-  margin-top: 6rem;
   display: flex;
-}
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
 
-a {
-  color: black;
-}
-
-h1 {
-  white-space: nowrap;
+  background-color: #fcfcfc;
 }
 
 img {
-  max-width: 37rem;
-}
-  .profile-pic{
-    max-width: 25rem;
-  }
-
-.navigation-list {
-  font-size: 2.5rem;
-  list-style-type: none;
-  text-align:right;
-  margin-right: 2.5rem;
+  border-radius: 50%;
+  height: 4em;
 }
 
-.link {
-  color: black;
-  text-decoration: none;
-}
-  .link:hover{
-    color: #ff4e47;
-    text-decoration: none;
-  }
-
-.project-title{
-  font-size: 2rem;
-}
-
-.project-link {
+a {
   color: #ff4e47;
   text-decoration: none;
 }
-  .project-link:hover {
-    color: #ff4e47;
+  a:hover {
     text-decoration: underline;
   }
 
-.graf {
-  font-size: 1.5rem;
-  list-style-type: none;
+h1 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  color: #ff4e47;
 }
-  .graf a {
+
+h2 {
+  margin: 0;
+}
+
+
+/* Header section styles */
+.div--header {
+  display: flex;
+}
+
+.div--img-wrapper {
+  padding-right: 1em;
+}
+
+
+/* Skills section styles */
+.div--skills {
+  padding-bottom: 0.25em;
+}
+
+.div--skills-section {
+  display: flex;
+  align-items: center;
+}
+
+.span--skill-section-title {
+  padding-right: 1em;
+  font-weight: bold;
+}
+
+.span--skill-section-list {
+  font-family: "Avenir";
+}
+
+
+/* Bio section styles */
+.div--bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.div--bio > span {
+  font-family: "monaco";
+  padding-bottom: 0.25em;
+}
+
+.div--bio > span > a {
+  font-family: "monaco";
+}
+
+.div--bio > span > i {
+  padding-right: 1em;
+}
+
+/* Links section styles */
+.span--links > a {
+  font-family: "monaco";
+}
+
+  .span--links > a > i {
+    color: black;
+    text-decoration: none;
+  }
+
+  .span--links > a > i:hover {
     color: #ff4e47;
   }
-  .graf a:hover {
-    text-decoration: underline;
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* Small screen accommodations */
+@media only screen and (max-device-width: 375px){
+  /* Cap width to prevent awkward line break */
+  .div--skills {
+    max-width: 87%;
   }
-
-/* ABOUT and CONTACT PAGE */
-
-.profile-left {
-  margin-right: 2.5rem;
+  .div--skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.skills-list {
-  list-style-type: none;
-  font-size: 1.25rem;
-  padding: 0rem;
-}
-
-.more {
-  display: none;
+@media only screen and (max-device-width: 414px){
+  /* Cap width to prevent awkward line break */
+  .div--skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -2,108 +2,37 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500" rel="stylesheet">
-      <link type="text/css"rel="stylesheet" href="index.css">
       <link rel="shortcut icon" type="images/png" href="images/favicon.png"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="text/css"rel="stylesheet" href="index.css">
       <title>Matt Zuzolo</title>
-
     </head>
 
     <body>
-
-      <ul class="navigation-list">
-        <h1 a href="#" onclick="hideIt()" class="link">Matt Zuzolo</a></h1>
-        <li> <a href="#" class="link" onclick="displayAbout()">about</a></li>
-        <li> <a href="https://github.com/mattzuzolo" class="link" target="_blank">github</a></li>
-        <li> <a href="#" class="link" onclick="displayMoreWork()">projects</a></li>
-        <li> <a href="https://thepointsguy.com/author/matt/" class="link" target="_blank">writing</a></li>
-        <li> <a href="./zuzolo-resume.pdf" class="link" target="_blank">resume</i><download></li>
-        <li> <a href="https://www.linkedin.com/in/mattzuzolo/" class="link" target="_blank">linkedin</a></li>
-        <li> <a href="#" class="link" onclick="displayMoreContact()">contact<a></li>
-      </ul>
-
-      <div id="about" class="more profile">
-
-        <div class="profile-left">
-          <img src="images/profile.png" alt="me" class="profile-pic">
+      <div class="content">
+        <div class="div--header"><div class="div--img-wrapper"><img src="./images/profile.png"></div><h1>Matthew Zuzolo</h1></div>
+        <div class="div--skills">
+          <div class="div--skills-section">
+            <span class="span--skill-section-title">Core Skills</span>
+            <span class="span--skill-section-list">JavaScript (ES6) &middot Node.js &middot Vue &middot <span class="no-wrap">React Native</span> &middot  AWS</span>
+          </div>
+          <div class="div--skills-section">
+            <span class="span--skill-section-title">Secondary Skills</span>
+            <span class="span--skill-section-list">React &middot PHP &middot Drupal &middot Ruby &middot <span class="no-wrap">Ruby on Rails</span></span>
+          </div>
         </div>
-        <div class="profile-right">
-          <p class="graf">Junior web developer at <a href="https://patch.com/" class="link" target="_blank">Patch</a> in New York City.</p>
-          <p class="graf">Visit my <a href="https://github.com/mattzuzolo" class="link" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/mattzuzolo/" class="link" target="_blank">LinkedIn</a> page to learn more about me!</p>
-          <ul class="skills-list">
-            <li><strong>Languages —</strong> JavaScript (ES6) / Ruby / HTML5 / CSS3</li>
-            <li><strong>Frameworks, libraries & more​ —</strong> React / Redux / Node / Express / Rails / GraphQL / Mocha / jQuery / SQL / Mongo / Git</li>
-            <li><strong>Non-technical —</strong> Illustrator / Photoshop / Adobe Marketing Cloud / Google Analytics / Spanish Language</li>
-          </ul>
+  
+        <div class="div--bio">
+          <span><i class="fas fa-fw fa-briefcase"></i>Junior Developer @ <a href="https://patch.com" target="_blank">Patch</a></a></span>
+          <span><i class="fas fa-fw fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Lower+East+Side,+New+York,+NY/@40.717279,-73.9884473,16.21z/data=!4m5!3m4!1s0x89c2598015ac8beb:0x59b849fea56b6a70!8m2!3d40.715033!4d-73.9842724" target="_blank">New York, NY</a></span>
+          <span><i class="fas fa-fw fa-globe-americas"></i>English &middot Español</span>
         </div>
-
-      </div> <!-- CLOSE ABOUT SECTION -->
-
-      <div id="work" class="more work">
-        <h3 class="project-title" class="project-title"><a href="https://obra-annotations.herokuapp.com/home" class="project-link" target="_blank">Obra</a></h3>
-        <span><a href="https://obra-annotations.herokuapp.com/home" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/obra" class="project-link" target="_blank">GitHub (front)</a> | <a href="https://github.com/mattzuzolo/obra-back" class="project-link" target="_blank">GitHub (back)</a></span>
-        <p class="graf">Annotate paintings and other fine arts on the web.</p>
-        <p class="graf"> <a href="https://obra-annotations.herokuapp.com/home" target="_blank"> <img src="images/obra.png" alt="obra-example"/></a></p>
-
-        <!-- </br> -->
-
-        <!-- <h3 class="project-title"><a href="https://bibli-books.herokuapp.com/" class="project-link" target="_blank">Bibli</a></h3>
-        <span><a href="https://bibli-books.herokuapp.com/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/bibli" class="project-link" target="_blank">GitHub (front)</a></span> | <a href="https://github.com/mattzuzolo/bibli-back" class="project-link" target="_blank">GitHub (back)</a></span>
-        <p class="graf">Manage and organize your personal library on the web.</p>
-        <p class="graf"> <a href="https://bibli-books.herokuapp.com/" target="_blank"> <img src="images/bibli.png" alt="bibli-example"/></a></p> -->
-
-        </br>
-
-        <h3 class="project-title"><a href="https://mattzuzolo.com/mental-math/" class="project-link" target="_blank">Mental Math</a></h3>
-        <span><a href="https://mattzuzolo.com/mental-math/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/mental-math" class="project-link" target="_blank">GitHub (front)</a> | <a href="https://github.com/mattzuzolo/mental-math-back" class="project-link" target="_blank">GitHub (back)</a></span>
-        <p class="graf">Practice your mental math skills against the clock.</p>
-        <p class="graf"> <a href="https://mattzuzolo.com/mental-math/" target="_blank"> <img src="images/mental-math.png" alt="mental-math-example" /></a></p>
-
-        </br>
-
-        <h3 class="project-title"><a href="http://mattzuzolo.com/ellsworth-kelly-generator-js/" class="project-link" target="_blank">Ellsworth Kelly Generator</a></h3>
-        <span><a href="http://mattzuzolo.com/ellsworth-kelly-generator-js/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/ellsworth-kelly-generator-js" class="project-link" target="_blank">GitHub</a></span>
-        <p class="graf">Recreate artist Ellsworth Kelly's "Spectrum of Colors Arranged by Chance" series with different themes.</p>
-        <p class="graf"> <a href="http://mattzuzolo.com/ellsworth-kelly-generator-js/" target="_blank"> <img src="images/ellsworth.png" alt="palette-example" /></a></p>
-
-        </br>
-
-        <h3 class="project-title"><a href="http://mattzuzolo.com/palette/" class="project-link" target="_blank">Palette</a></h3>
-        <span><a href="http://mattzuzolo.com/palette/" class="project-link" target="_blank">Demo</a> | <a href="https://github.com/mattzuzolo/palette" class="project-link" target="_blank">GitHub</a></span>
-        <p class="graf">Choose colors for the web based on similar RGB values.</p>
-        <p class="graf"> <a href="http://mattzuzolo.com/palette/" target="_blank"> <img src="images/palette.png" alt="ellsworth-example" /></a></p>
-      </div> <!-- CLOSES MORE WORK SECTION -->
-
-      <div id="contact" class="more profile">
-
-        <div class="profile-left">
-          <img class="profile-pic" src="images/profile.png" alt="me">
+  
+        <div class="div--links">
+          <span class="span--links"><a href="https://github.com/mattzuzolo" target="_blank"><i class="fab fa-fw fa-github"></i></a>&#9 &middot &#9<a href="https://www.linkedin.com/in/mattzuzolo/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>&#9 &middot &#9<a href="mailto:matthewzuzolo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a><!-- &#9 &middot &#9<a href="#">Resume</a>--></span>
         </div>
-        <div class="profile-right graf">
-            <h3><a class="link" href="mailto:matthewzuzolo@gmail.com">matthewzuzolo@gmail.com</a></h3>
-        </div>
-
-      </div> <!-- CLOSES MORE CONTACT SECTION -->
-
-    <!-- This JS will display the apropriate information selected on the navbar. If text is already present, it will be hidden to make room for new information request. -->
-    <script type="text/javascript">
-        function displayAbout() {
-          hideIt();
-          document.getElementById('about').style.display = "flex";
-        }
-        function displayMoreWork() {
-          hideIt();
-          document.getElementById('work').style.display = "inline";
-        }
-        function displayMoreContact() {
-          hideIt();
-          document.getElementById('contact').style.display = "flex";
-        }
-        function hideIt() {
-          document.querySelectorAll('.more').forEach(element => element.style.display = "none");
-        }
-    </script>
-
-  </body>
+      </div>
+  
+      <script src="https://kit.fontawesome.com/3fa06e8c10.js"></script>
+    </body>
 </html>
