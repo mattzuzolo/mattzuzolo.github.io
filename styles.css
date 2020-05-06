@@ -1,0 +1,129 @@
+* {
+  font-family: "Avenir";
+  color: #3e4346;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+body {
+  /* Center in viewport */
+  max-width: 65vh;
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4e47;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
+img {
+  border-radius: 50%;
+  height: 80px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #ff4e47;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* - - - - */
+/* HEADER */
+/* - - - - */
+
+.header {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+  .profile-image {
+    margin-right: 16px;
+  }
+
+  .view-resume {
+    margin-left: 2px; /* Align view resume with name */
+    font-size: 17px;
+  }
+
+  .external-link-icon {
+    color: #ff4e47;
+    font-size: 14px;
+  }
+
+/* - - - - */
+/* MAIN */
+/* - - - - */
+
+
+.skill-wrapper {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+  .skill-label {
+    font-weight: 700;
+    margin-right: 8px;
+  }
+
+/* Bio section styles */
+
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+  .bio-wrapper > span {
+    font-family: monaco;
+    margin-bottom: 4px;
+  }
+
+  .bio-wrapper > span > a {
+    font-family: monaco;
+  }
+
+  .bio-wrapper > span > i {
+    padding-right: 8px;
+  }
+
+/* Links section styles */
+
+.contact-links > a {
+  font-family: monaco;
+}
+
+  .contact-links > a > i {
+    color: black;
+    text-decoration: none;
+  }
+
+  .contact-links > a > i:hover {
+    color: #ff4e47;
+  }
+  
+/* small accomodations */
+@media only screen and (max-device-width: 375px){
+  .view-resume {
+    margin-left: 0px; /* On iphone 5 the margin-left looks awkward */
+  }
+}
+
+/* tablet accomodations */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  body {
+    max-width: 55%;
+  }
+
+}

@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="UTF-8">
-      <link rel="shortcut icon" type="images/png" href="images/favicon.png"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link type="text/css"rel="stylesheet" href="index.css">
-      <title>Matt Zuzolo</title>
-      <script src="https://kit.fontawesome.com/3fa06e8c10.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <title>Matt Zuzolo</title>
+    <script src="https://kit.fontawesome.com/3fa06e8c10.js"></script>
+  </head>
 
-    <body>
-      <div class="content">
-        <div class="div--header"><div class="div--img-wrapper"><img src="./images/profile.png"></div><h1>Matthew Zuzolo</h1></div>
-        <div class="div--skills">
-          <div class="div--skills-section">
-            <span class="span--skill-section-title">Core Skills</span>
-            <span class="span--skill-section-list">JavaScript (ES6) &middot React &middot <span class="no-wrap">React Native</span> &middot Node.js &middot  AWS</span>
-          </div>
-          <div class="div--skills-section">
-            <span class="span--skill-section-title">Other Skills</span>
-            <span class="span--skill-section-list">Vue &middot PHP &middot Drupal &middot Ruby &middot <span class="no-wrap">Ruby on Rails</span></span>
-          </div>
-        </div>
-  
-        <div class="div--bio">
-          <span><i class="fas fa-fw fa-briefcase"></i>Junior Developer @ <a href="https://patch.com" target="_blank">Patch</a></a></span>
-          <span><i class="fas fa-fw fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Lower+East+Side,+New+York,+NY/@40.717279,-73.9884473,16.21z/data=!4m5!3m4!1s0x89c2598015ac8beb:0x59b849fea56b6a70!8m2!3d40.715033!4d-73.9842724" target="_blank">New York, NY</a></span>
-          <span><i class="fas fa-fw fa-globe-americas"></i>English &middot Español</span>
-        </div>
-  
-        <div class="div--links">
-          <span class="span--links"><a href="https://github.com/mattzuzolo" target="_blank"><i class="fab fa-fw fa-github"></i></a>&#9 &middot &#9<a href="https://www.linkedin.com/in/mattzuzolo/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>&#9 &middot &#9<a href="mailto:matthewzuzolo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a><!-- &#9 &middot &#9<a href="#">Resume</a>--></span>
-        </div>
+  <body class="content">
+    <div class="content"></div>
+    <div class="header">
+      <img class="profile-image" src="./images/profile.png" />
+      <div class="header-text-wrapper">
+        <h1>Matthew Zuzolo</h1>
+        <a href="./zuzolo-resume.pdf" class="view-resume" target="_blank"
+          >Resume <i class="external-link-icon fas fa-external-link-alt"></i
+        ></a>
       </div>
-    </body>
+    </div>
+    <div class="skill-wrapper">
+      <span class="skill-label no-wrap">Core focus</span>
+      <span>JavaScript (ES6) &middot TypeScript &middot React &middot Next.js &middot 
+        <span class="no-wrap">React Native &middot</span> Redux &middot Node.js &middot Express
+        &middot AWS</span
+      >
+    </div>
+    
+    <div class="skill-wrapper">
+      <span class="skill-label no-wrap">Other skills</span>
+      <span>Vue &middot PHP &middot Drupal &middot Ruby &middot
+        <span class="no-wrap">Ruby on Rails</span></span
+      >
+    </div>
+  <div class="bio-wrapper">
+    <span><i class="bio-icon fas fa-fw fa-briefcase"></i>Junior Developer @ <a href="https://patch.com" target="_blank">Patch</a></a></span>
+    <span><i class="bio-icon fas fa-fw fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Lower+East+Side,+New+York,+NY/@40.717279,-73.9884473,16.21z/data=!4m5!3m4!1s0x89c2598015ac8beb:0x59b849fea56b6a70!8m2!3d40.715033!4d-73.9842724" target="_blank">New York, NY</a></span>
+    <span><i class="bio-icon fas fa-fw fa-globe-americas"></i>English &middot Español</span>
+  </div>
+
+  <div class="contact-links"><a href="https://github.com/mattzuzolo" target="_blank"><i class="fab fa-fw fa-github"></i></a>&#9 &middot &#9<a href="https://www.linkedin.com/in/mattzuzolo/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>&#9 &middot &#9<a href="mailto:matthewzuzolo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a><!-- &#9 &middot &#9<a href="#">Resume</a>--></div>
+  </body>
 </html>
