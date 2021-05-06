@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="UTF-8">
-      <link rel="shortcut icon" type="images/png" href="images/favicon.png"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link type="text/css"rel="stylesheet" href="index.css">
-      <title>Matt Zuzolo</title>
-      <script src="https://kit.fontawesome.com/3fa06e8c10.js"></script>
-    </head>
-
-    <body>
-      <div class="content">
-        <div class="div--header"><div class="div--img-wrapper"><img src="./images/profile.png"></div><h1>Matthew Zuzolo</h1></div>
-        <div class="div--skills">
-          <div class="div--skills-section">
-            <span class="span--skill-section-title">Core Skills</span>
-            <span class="span--skill-section-list">JavaScript (ES6) &middot React &middot <span class="no-wrap">React Native</span> &middot Node.js &middot  AWS</span>
-          </div>
-          <div class="div--skills-section">
-            <span class="span--skill-section-title">Other Skills</span>
-            <span class="span--skill-section-list">Vue &middot PHP &middot Drupal &middot Ruby &middot <span class="no-wrap">Ruby on Rails</span></span>
-          </div>
-        </div>
-  
-        <div class="div--bio">
-          <span><i class="fas fa-fw fa-briefcase"></i>Junior Developer @ <a href="https://patch.com" target="_blank">Patch</a></a></span>
-          <span><i class="fas fa-fw fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Lower+East+Side,+New+York,+NY/@40.717279,-73.9884473,16.21z/data=!4m5!3m4!1s0x89c2598015ac8beb:0x59b849fea56b6a70!8m2!3d40.715033!4d-73.9842724" target="_blank">New York, NY</a></span>
-          <span><i class="fas fa-fw fa-globe-americas"></i>English &middot Español</span>
-        </div>
-  
-        <div class="div--links">
-          <span class="span--links"><a href="https://github.com/mattzuzolo" target="_blank"><i class="fab fa-fw fa-github"></i></a>&#9 &middot &#9<a href="https://www.linkedin.com/in/mattzuzolo/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>&#9 &middot &#9<a href="mailto:matthewzuzolo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a><!-- &#9 &middot &#9<a href="#">Resume</a>--></span>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Zuzolo</title>
+    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" />
+    <link
+      target="_blank"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" target="_blank" href="styles.css" />
+    <link rel="icon" target="_blank" href="/assets/favicon.png" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="links-wrapper">
+        <a class="link" target="_blank" href="mailto:matthewzuzolo@gmail.com"
+          >Email</a
+        >
+        <span class="slash">/</span>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/mattzuzolo"
+          >LinkedIn</a
+        >
+        <span class="slash">/</span>
+        <a class="link" target="_blank" href="https://github.com/mattzuzolo/"
+          >GitHub</a
+        >
+        <!-- <span class="slash">/</span>
+        <a class="link" target="_blank" href="#">Resume (PDF)</a> -->
       </div>
-    </body>
+      <div class="primary-text">
+        <h1 class="title"><span id="greeting">Good evening,</span> 👋</h1>
+        <p>
+          I am Matt Zuzolo, a full-stack software engineer in New York City. For
+          more than two years, I have been building new platforms at
+          <a class="link" target="_blank" href="https://www.patch.com">Patch</a>
+          to connect people across America to their local communities.
+        </p>
+        <p>
+          Currently, I am developing new AWS-based Serverless projects written
+          in Node.js and TypeScript to make Patch as fast and scalable as
+          possible. Previously, I helped to create our front-end site in React
+          and Next.js to improve performance and user experience.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>

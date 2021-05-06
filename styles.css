@@ -1,0 +1,97 @@
+* {
+  font-family: "Roboto", -apple-system, "Helvetica Neue", sans-serif;
+  color: #323e56;
+}
+
+a:hover {
+  color: #465c87;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f7f1ec;
+
+  /* Prevent scroll and create border around entire window */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  border: 16px solid #2a6811;
+}
+
+.primary-text {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  max-width: 575px;
+  margin-left: 5%;
+  margin-top: 7.5%;
+
+  line-height: 24px;
+}
+
+.title {
+  margin-bottom: 26px;
+}
+
+#greeting {
+  font-style: italic;
+}
+
+.links-wrapper {
+  /* Push links to top-right corner */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.slash {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Mobile overrides */
+@media (max-device-width: 480px) {
+  .primary-text {
+    width: 100%;
+    max-width: 90%;
+    margin-left: 12px;
+    margin-top: 26px;
+  }
+
+  .links-wrapper {
+    /* Push links under text, center and space evenly*/
+    display: flex;
+    /* justify-content: space-between; */ /*TURN THIS ON WHEN RESUME TURNS ON */
+    justify-content: flex-start;
+    order: 1; /* Make links to appear under text on mobile */
+    margin-left: 12px; /* Add left spacing to be even with primary-text */
+  }
+
+  .slash {
+    /* TURN THIS ON WHEN RESUME IS ON */
+    /* padding-left: 6px;
+    padding-right: 6px; */
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Tiny screen overrides */
+@media (max-device-width: 374px) {
+  .primary-text {
+    margin-left: 12px;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+  }
+}
