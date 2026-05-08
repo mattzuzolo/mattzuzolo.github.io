@@ -57,6 +57,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   transition: opacity 0.15s ease;
+  white-space: nowrap;
 }
 
 .link:hover {
